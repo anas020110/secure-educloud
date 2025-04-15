@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    background-image: url('image/bb1.jpg'); /* Make sure this matches your image */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-box button:hover {
+    background-color: #1976D2;
+  }
+  
+  .login-box .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-box p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  

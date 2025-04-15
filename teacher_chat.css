@@ -1,0 +1,125 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  /* Background Image */
+  .background {
+    background-image: url('image/a1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.75);
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Header/Nav */
+  header {
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  /* Chat Container */
+  main {
+    padding: 50px 20px;
+  }
+  .card {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  .card h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Chat Display Box */
+  .chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  .bubble {
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: white;
+  }
+  .bubble .time {
+    font-size: 12px;
+    float: right;
+    opacity: 0.7;
+    margin-left: 10px;
+  }
+  
+  /* Color by Role */
+  .bubble.admin {
+    background-color: #e74c3c; /* red */
+  }
+  .bubble.teacher {
+    background-color: #2ecc71; /* green */
+  }
+  .bubble.student {
+    background-color: #3498db; /* blue */
+  }
+  
+  /* Input Area */
+  .chat-form {
+    display: flex;
+    gap: 10px;
+  }
+  .chat-form input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .chat-form button {
+    padding: 12px 25px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .chat-form button:hover {
+    background-color: #1976D2;
+  }
+  

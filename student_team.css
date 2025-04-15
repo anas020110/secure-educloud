@@ -1,0 +1,134 @@
+/* Reset and base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 40px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-container img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: white;
+    color: #001f3f;
+    border-radius: 5px;
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Team Section */
+.team-section {
+    padding: 100px 20px 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 60px auto;
+    max-width: 1200px;
+    border-radius: 20px;
+}
+
+.team-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    font-size: 1.3rem;
+    margin: 10px 0 5px;
+}
+
+.team-member .position {
+    font-weight: bold;
+    color: #00f7ff;
+    margin-bottom: 8px;
+}
+
+.team-member p {
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid #003f88;
+    margin-top: 40px;
+    color: #ccc;
+    font-size: 0.9rem;
+}

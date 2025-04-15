@@ -1,0 +1,109 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+.background {
+  background-image: url('image/a1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.75);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 50px;
+}
+.card {
+  background: white;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Forms */
+.upload-form, .search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.upload-form input[type="text"], .search-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+}
+.upload-form input[type="file"] {
+  padding: 5px;
+}
+button, .reset {
+  padding: 10px 18px;
+  border: none;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.reset {
+  background-color: gray;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #f5f5f5;
+}
+
+/* Buttons */
+.btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.download { background: #4CAF50; }
+.edit { background: #FFC107; }
+.delete { background: #F44336; }
+.btn:hover { opacity: 0.9; }

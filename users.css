@@ -1,0 +1,101 @@
+/* Global + Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  /* Background */
+  .background {
+    background-image: url('image/a1.jpg'); /* Make sure this image exists */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.75);
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Header */
+  header {
+    background-color: #222;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 50px;
+  }
+  .card {
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  th {
+    background-color: #f5f5f5;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .enable {
+    background-color: #4CAF50;
+  }
+  .enable:hover {
+    background-color: #45a049;
+  }
+  .disable {
+    background-color: #f44336;
+  }
+  .disable:hover {
+    background-color: #d32f2f;
+  }
+  

@@ -1,0 +1,82 @@
+.chat-container {
+    width: 600px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 81, 255, 0.8);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+.chat-container h2 {
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background: rgba(0, 0, 102, 0.85); /* Chat area background */
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Message bubble */
+.bubble {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+}
+
+.bubble.admin {
+    background-color: #e74c3c; /* Red */
+}
+
+.bubble.teacher {
+    background-color: #2ecc71; /* Green */
+}
+
+.bubble.student {
+    background-color: #3498db; /* Blue */
+}
+
+.bubble .time {
+    font-size: 0.8em;
+    float: right;
+    opacity: 0.7;
+}
+
+/* Input and Button */
+.chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+}
+
+.chat-form button {
+    padding: 10px 20px;
+    background: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-form button:hover {
+    background: #2980b9;
+}
